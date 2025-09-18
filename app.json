@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "device-locator",
+    "name": "Device Locator",
     "slug": "device-locator",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -14,7 +14,11 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.client.devicelocator",
+      "config": {
+        "googleMapsApiKey": "IOS_GOOGLE_MAPS_KEY"
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -22,7 +26,13 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.client.devicelocator",
+      "config": {
+        "googleMaps": {
+          "apiKey": "ANDROID_GOOGLE_MAPS_KEY"
+        }
+      }
     },
     "web": {
       "bundler": "metro",
